@@ -2,11 +2,16 @@
     width: 90%;
     height: 35vh;
     margin: 12rem 3rem;
-  
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
    
     padding: 1rem;
    
     border-radius: 1rem;
+
+    background-color: rgb(76, 32, 96);
     
     
 }
@@ -32,5 +37,8 @@
     background-color: #7861cb98;
 }
 .load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
 }
