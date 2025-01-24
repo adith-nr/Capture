@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
+
+
 import './App.css'
 import Navbar from './comp/Navbar'
 import HeroSec from './comp/HeroSec'
@@ -9,8 +9,6 @@ import ModelSpec from './comp/ModelSpec'
 import Capture from './comp/Capture'
 
 function App() {
-  
-
   return (
       <div>
         <Navbar/>
