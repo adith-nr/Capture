@@ -1,7 +1,10 @@
 .capture{
     width: 90%;
-    height: 35vh;
-    margin: 12rem 3rem;
+    height: 55vh;
+    margin-left:3rem;
+    margin-right:3rem;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
     display: flex;
 
     align-items: center;
@@ -9,9 +12,15 @@
    
     padding: 1rem;
    
-    border-radius: 1rem;
+    color: white;
+    border: 2px  white dashed ;
+    background-color: rgba(47, 45, 45, 0.524);
 
-    background-color: rgb(76, 32, 96);
+    cursor: pointer;
+
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 5px;
     
     
 }
@@ -19,26 +28,56 @@
     font-size: 2rem;
 }
 
-#form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
+
 #btn{
     height: 2.5rem;
-    width: 6rem;
+    width: auto;
     padding: 0.5rem;
-    color: white;
+    color: #39FF14;
     font-size: 1.3rem;
     border-radius: 0.4rem;
-    border: 1px solid rgb(0, 33, 100);
-    background-color: #7861cb98;
+    border: 2px solid white;
+
+    background-color: black;
+
+    cursor: pointer;
 }
+
 .load{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
 }
+
+.terminal {
+    overflow: hidden; 
+    white-space: nowrap; 
+    display: inline-block;
+
+    font-size: 5rem;
+
+    color: lime;
+    border-right: 2px solid lime;
+    animation: typing 2s steps(5, end), blink 0.6s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent; 
+    }
+    50% {
+      border-color: lime; 
+    }
+  }
+  
+  

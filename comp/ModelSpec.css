@@ -18,16 +18,20 @@
     font-size: 3rem;
 }
 .cards{
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
 }
 #itemimg{
     height: 2.5rem;
     width: 3rem;
 }
+
+
 .item{
     display: flex;
     flex-direction: column;
@@ -36,8 +40,9 @@
     height: 100%;
     gap: 1.5rem;
     text-align: center;
-    border: 1px solid rgb(70, 76, 195);
-    padding: 0.5rem;
+    border: 1px solid #EDF6F9;
+    padding: 1rem;
+    color: #EDF6F9;
     border-radius: 0.4rem;
-     background-color: rgba(65, 113, 225, 0.631);
+    background-color: black;
 }

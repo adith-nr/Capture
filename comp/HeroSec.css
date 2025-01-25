@@ -10,25 +10,57 @@
     align-items: center;
     border-radius: 1rem;
     margin-top: 5rem;
-    background-image: url('back.png');
-    background-repeat: no-repeat;
+   
     background-size: 100vw;
     background-position: center;
     position: relative;
     
 }
 .left{
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    
+    color: #EDF6F9;
     gap: 2rem;
     margin-top: 3rem;
     padding: 2rem;
     max-width: 500px;
     text-align: left;
-    animation: slidefromleft 1s ease 0s 1 forwards ;
+   
 
+}
+ 
+
+
+
+#terminal{
+    overflow: hidden; 
+   
+    
+    display: inline-block;
+    white-space: nowrap; 
+    
+    display: inline-block;
+    padding-left: 2px;
+    font-size: 2rem;
+    animation: typing 2s steps(30, end) infinite , blink 0.5s step-end infinite;
+}
+
+ #look{
+    overflow:visible;
+    white-space: nowrap; 
+    
+    display: inline-block;
+    animation: typing 2s steps(35, end) 1, blink 0.5s step-end infinite;
+}
+
+ @keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 @keyframes slidefromleft{
@@ -43,38 +75,40 @@
 }
 #desc{
     opacity: 0.7;
+    animation: slidefromleft 1s ease 0s 1 forwards ;
+}
+#desc::after{
    
-
 }
 h3{
    font-size: 1.9rem;
    
 }
-h2{
-    font-size: 3em;
-}
+
 #look{
    
     font-size: 1.5rem;
+    /* animation: slidefromleft 1s ease 0s 1 forwards ; */
 }
 
-/* .right{
-    width: 50%;
+ .right{
+    width: 40%;
     display: flex;
     justify-content: center;
+    
     padding: 2rem;
     height: 50%;
     max-width: 400px;
     animation: slidefromright 1s ease 0s 1 forwards ;
-}
+}*/
 .right img{
    width: 100%;
    z-index: 0;
    border-radius: 0.4rem;
-   mix-blend-mode: multiply;
+   mix-blend-mode: darken;
    position: absolute;
    right: 10%;
-} */
+} 
 
 @keyframes slidefromright{
     0% {
@@ -84,5 +118,27 @@ h2{
     100%{
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media screen and (min-width:850px) {
+    .left h2{
+        font-size: 5rem;
+    }
+    .right{
+        align-items: center;
+    }
+    .right img{
+        width: 600px;
+        height: 400px;
+    }
+    .look{
+        font-size: 2rem;
+    }
+    .desc{
+        font-size: 1.5rem;
+    }
+    #terminal{
+        font-size: 4.5rem;
     }
 }

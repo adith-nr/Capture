@@ -1,12 +1,22 @@
 import React from 'react'
 import './AboutSec.css'
+import letters from './letters.png'
 function AboutSec() {
   return (
     <div className='about'>
-
-      <h3 id='about'>About</h3>
-      <p id='adesc'>Lorem ipsum dolor sit amet consectetur adipisfacere delectus. Pariatur debitis atque possimus, neque sapiente ducimus dignissimos, incidunt hic cum in, voluptatum exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, vero voluptate? Nesciunt sed eos consequuntur nemo, veniam tenetur, voluptate provident beatae consequatur placeat error, porro fugit. Id eum architecto velit?
-      </p>
+      <h3 id='aboutt'>About</h3>
+      <div className="acont">
+        <div className="aleft">
+          <img src={letters} alt="" />
+        </div>
+        <div className="aright">
+        <p id='adesc'>Our project is an advanced text extraction tool that leverages deep learning to recognize and extract text from images, similar to captchas. The system is designed with a React frontend for a seamless user experience and a Flask backend for handling requests and processing images efficiently.  </p>
+        </div>
+       
+      
+       
+      </div>
+      
        
      
     </div>

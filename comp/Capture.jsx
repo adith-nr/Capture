@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import './Capture.css'
 
+ import { IoCloudUploadOutline } from "react-icons/io5";
+
 import './Captcha.css'
 import axios from 'axios'
 
 
 function Capture() {
     const [loading,setLoading] = useState(false)
+    const [image, setImage] = useState(null)
+    const [key, setKey] = useState(0)
     const [datafile, setdata] = useState({ filename: '', captcha: '' });
 
     const postAPI = async() =>{
@@ -22,6 +26,7 @@ function Capture() {
 
         //console.log(send.data)
         setdata(send.data)
+        setImage(true)
     }
 
    function handleChange(e){
@@ -31,35 +36,46 @@ function Capture() {
         })
     }
 
-    useEffect(() => {
-        if (datafile.filename !== '') {
-          postAPI()
-          setLoading(true)
+    function handlesubmit(e){
+        e.preventDefault()
+            postAPI();
+            setLoading(true);
+        
+    }
+
+    useEffect(()=>{
+        if (datafile?.captcha){
+            setKey((prevkey) => prevkey + 1)
         }
-      }, [datafile.filename])
+    }, [datafile?.captcha])
 
 
   return (
-    <div className='capture'>
-
-        <form action="" id='form'>
-            <h3 id='ctitle'>Upload the image you want to capture:</h3>
-            <input type="file" id="img" name="img"  onChange={handleChange} accept="image/*" />
-            <button id='btn' type="submit">Upload</button>
-        </form>
-
+    //onClick={() => document.querySelector(".img").click()}
+    <form action="" className='capture' id='form' onSubmit={handlesubmit} onClick={(e) => {
+        if (e.target.id != "btn"){
+            document.querySelector(".img").click();
+        }
+    }}>
+        
+        <input type="file" className="img" name="img"  onChange={handleChange} accept="image/*" placeholder='Captcha' hidden />
+        {image ?
+            (<img src={`./backend/test/${datafile.filename}`} style={{ width: '350px', height: '200px' }} alt="Image" />
+            )
+            :
+             (<IoCloudUploadOutline size = {80} />)
+        }
+        
 
         <div className="load">
-            {!loading ? (
-                <h3>Loading..</h3>
-            ):(
-                <h2>{datafile.filename} : {datafile.captcha}</h2>
-            )   
-            }
-            <img src={`./backend/test/${datafile.filename}`} alt='blank'></img>
+
+       
+            <h1 key={key} className='terminal'>{datafile.captcha}  </h1>
+     
         </div>
 
-    </div>
+        <button id='btn' type="submit">.Upload</button>
+    </form>
 
   )
 }

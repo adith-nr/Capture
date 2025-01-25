@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+#model,#capture,#about{
+  padding-top: 60px;
+}
+#home{
+  padding-top: 40px;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;

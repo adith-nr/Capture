@@ -11,7 +11,7 @@ app =Flask(__name__)
 
 CORS(app, resources={r"/api/captcha": {"origins": "http://localhost:5173"}}, supports_credentials=True)
 
-working_dir = r"C:\Users\Azeem\Desktop\Capture"
+working_dir = r"/Users/adithnr/Documents/GitHub/Capture"
 
 
 
@@ -26,7 +26,7 @@ def captcha():
              return jsonify({"Filename not Received"})
         else:    
             characters = '123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-            img_path = os.path.join(r"C:\Users\Azeem\Desktop\Capture\backend", "test", filename)
+            img_path = os.path.join(r"/Users/adithnr/Documents/GitHub/Capture/backend", "test", filename)
             predicted_classes = predict_test_image(img_path, num_characters=5)
             captcha = "".join([characters[i] for i in predicted_classes])
 
@@ -35,7 +35,7 @@ def captcha():
              
 
     elif request.method == "GET":
-        with open(working_dir+ r"\data\records.json", "r") as  f:
+        with open(r"/Users/adithnr/Documents/GitHub/Capture/data/records.json", "r") as  f:
                 return f.read()
 
 

@@ -1,11 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Anonymous Pro", serif;
+  color:  #37ff14d5;
 }
 body{
-  background: linear-gradient(45deg, #1a2a6c 0%, #4f387a 25%, #6c3483 50%);
+  background-color: black;
 
   z-index: -1;
   color: #ecf0f1;
