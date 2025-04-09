@@ -9,7 +9,7 @@ function HeroSec() {
     <div className="left">
       <p id='look'>Look here Pookie!</p>
       <h2 id='terminal'>Wanna Capture?</h2>
-      <p id='desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum neque odit nam labore facilis, limilique inam, doloribus officiis! Saepe libero officia ipsum. Harum, cum.</p>
+      <p id='desc'>Bored of doing the captchas yourself, dont worry we have a solution for your hassle. </p>
     </div>
       <div className="right">
         <img src={h} alt="" />

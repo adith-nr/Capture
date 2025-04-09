@@ -17,14 +17,15 @@
     
 }
 .left{
-    width: 55%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     color: #EDF6F9;
     gap: 2rem;
     margin-top: 3rem;
-    padding: 2rem;
-    max-width: 500px;
+    max-width: 550px;
+    padding: 1rem;
+    
     text-align: left;
    
 
@@ -43,11 +44,11 @@
     display: inline-block;
     padding-left: 2px;
     font-size: 2rem;
-    animation: typing 2s steps(30, end) infinite , blink 0.5s step-end infinite;
+    animation: typing 2s steps(70, end) infinite , blink 0.5s step-end infinite;
 }
 
  #look{
-    overflow:visible;
+    overflow:hidden;
     white-space: nowrap; 
     
     display: inline-block;
@@ -60,6 +61,7 @@
     }
     to{
         width: 100%;
+       
     }
 }
 
@@ -88,11 +90,11 @@ h3{
 #look{
    
     font-size: 1.5rem;
-    /* animation: slidefromleft 1s ease 0s 1 forwards ; */
+    
 }
 
  .right{
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: center;
     
@@ -135,10 +137,10 @@ h3{
     .look{
         font-size: 2rem;
     }
-    .desc{
+    #desc{
         font-size: 1.5rem;
     }
     #terminal{
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 }

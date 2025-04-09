@@ -104,7 +104,8 @@ def characters_splitting(image):
 
       # Process the image: enhance, draw lines, crop, clarity
       final = process_image(image)
-
+      if final is None:
+        print("characters_splitting(): process_image()")
       # Split the image into characters (assuming 5 characters per captcha)
       destination_list = [cv2.resize(final[:, i:i+30], (32,32)) for i in range(0, 130, 30)]
 
@@ -135,7 +136,9 @@ def predict_test_image(test_img_path, num_characters=5):
     # Split the test image into individual characters
 
     image = cv2.imread(test_img_path, cv2.IMREAD_GRAYSCALE)
-    
+    if image is None:
+        print(f"predict_test_image(): failed to load image from {test_img_path}")
+        return []
     final = process_image(image)
 
     char_images = characters_splitting(final)
@@ -158,4 +161,4 @@ def clarity(image):
 
 def process_image(image):
     return enhance(clarity(crop_image(crop_image(enhance(image)))))
- 
+    
