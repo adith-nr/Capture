@@ -21,4 +21,5 @@ Integrates the trained deep learning model for text recognition.
 
 Model trained to recognize alphanumeric captcha characters.
 Likely using CNN-based architecture (e.g., LeNet, or a custom CNN).
-Possibly trained on a synthetic dataset of captchas or a publicly available one like the CaptchaMNIST.
+Possibly trained on a synthetic dataset of captchas or a publicly available one like the CaptchaMNIST.<img width="1470" alt="Screenshot 2025-01-25 at 1 39 01 PM" src="https://github.com/user-attachments/assets/7c98abc1-a996-4dc6-82ed-5b7695c88c7c" />
+
