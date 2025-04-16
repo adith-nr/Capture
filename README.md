@@ -20,13 +20,14 @@ Integrates the trained deep learning model for text recognition.
 🔹 Deep Learning (Python):
 
 Model trained to recognize alphanumeric captcha characters.
-Trained on a synthetic dataset CaptchaMNIST
-(e.g., LeNet, or a custom CNN).<img width="1470" alt="Screenshot 2025-01-25 at 1 38 53 PM" src="https://github.com/use<img width="1470" alt="Screenshot 2025-04-09 at 11 48 00 AM" src="https://github.com/user-attachments/assets/bee9ac9f-615e-4e7d-bd0f-3d71235993af" />
-r-attachments/assets/1d30e2ec-038a-4558-a1a9-9ed7bf40f79a" />
+Trained on a synthetic dataset CaptchaMNIST.
+
 ![Image 25-01-25 at 2 07 PM](https://github.com/user-attachments/assets/96f09edc-8f81-438f-99d0-f5f95822bc6c)
+<img width="1470" alt="Screenshot 2025-01-25 at 1 38 53 PM" src="https://github.com/user-attachments/assets/e7417a81-1935-4463-a2b0-4fe3ed706170" />
 
 .<img width="1470" alt="Screenshot 2025-01-25 at 1 38 58 PM" src="https://github.com/user-attachments/assets/c49540bf-e4ac-42da-b739-1746b22dbf28" />
 
 
 <img width="1470" alt="Screenshot 2025-01-25 at 1 39 01 PM" src="https://github.com/user-attachments/assets/7c98abc1-a996-4dc6-82ed-5b7695c88c7c" />
+<img width="1470" alt="Screenshot 2025-04-09 at 11 48 00 AM" src="https://github.com/user-attachments/assets/18c08911-5b20-4f41-a082-ac64389b5a09" />
 
